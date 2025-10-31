@@ -3,49 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Blog</title>
+  <title>My Blog - Stories, Learnings & Insights</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>My Personal Blog</h1>
-    <p>Thoughts, Stories, and Ideas</p>
+    <div class="header-content">
+      <h1>My Blog</h1>
+      <p>Stories, Learnings & Insights ✨</p>
+    </div>
   </header>
 
+  <nav class="navbar">
+    <div class="nav-content">
+      <a href="index.html" class="nav-brand">Home</a>
+      <div class="nav-links">
+        <a href="#recent">Recent Posts</a>
+        <a href="#about">About</a>
+      </div>
+    </div>
+  </nav>
+
   <main>
-    <section class="blog-post">
-      <img src="image1.png" alt="Blog Image 1" class="blog-image">
-      <h2>Blog Title One</h2>
-      <p class="date">October 30, 2025</p>
-      <p>
-        This is your first blog content. Replace this paragraph with your actual text. 
-        You can write about your thoughts, experiences, or lessons learned — whatever represents your voice best.
-      </p>
-    </section>
-
-    <section class="blog-post">
-      <img src="image2.png" alt="Blog Image 2" class="blog-image">
-      <h2>Blog Title Two</h2>
-      <p class="date">October 29, 2025</p>
-      <p>
-        Here’s another blog section. Keep each post meaningful — talk about something you learned, 
-        observed, or want your readers to reflect on. Impact comes when your content changes how people think.
-      </p>
-    </section>
-
-    <section class="blog-post">
-      <img src="image3.png" alt="Blog Image 3" class="blog-image">
-      <h2>Blog Title Three</h2>
-      <p class="date">October 28, 2025</p>
-      <p>
-        Use this post for storytelling or to explore an idea deeply. Don’t just share activities — share your 
-        impact. What changed because of what you did? That’s what makes a reader stay.
-      </p>
+    <section id="recent" class="posts-section">
+      <div class="posts-container" id="posts"></div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 My Blog | Designed with ❤️ by Me</p>
+    <p>&copy; <span id="year"></span> My Blog | Crafted with ❤ & Code</p>
   </footer>
 
   <script src="script.js"></script>
